@@ -52,9 +52,9 @@ def movies_with_director_key(name, movies_collection)
 
 new_array = []
 i = 0
-m_info = movie_data[i]
-d_info = movie_data[i][:director_name]
-new_array[i] = 0
+m_info = movies_collection[i]
+d_info = movies_collection[i][:director_name]
+#new_array[i] = 0
 while i < movies_collection.length do
     
     new_array << movie_with_director_name(director_name, movie_data)
