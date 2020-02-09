@@ -56,9 +56,9 @@ i = 0
 #new_array[i] = 0
 while i < movies_collection.length do
     source = movie_with_director_name(director_name, movie_data)
-    movie_collection =source[movie_data][:title][i]
+    movie_collection =source[movie_data][:title]
     name = new_array[:name][name]
-    new_array << name => {movie_collection}
+    new_array << name => {:title => movie_collection}
 i += 1
 end
  new_array
