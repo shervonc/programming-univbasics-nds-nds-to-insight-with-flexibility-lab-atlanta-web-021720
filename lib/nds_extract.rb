@@ -57,6 +57,7 @@ i = 0
 #new_array[i] = 0
 while i < movies_collection.length do
     movie_data = movies_collection[i]
+    director_name = name[i][:]
     new_array << movie_with_director_name(director_name, movie_data)
 i += 1
 end
