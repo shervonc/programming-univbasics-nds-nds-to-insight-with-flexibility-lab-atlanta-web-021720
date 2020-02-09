@@ -106,7 +106,7 @@ def movies_with_directors_set(source)
     d_name = source[d][:name]
     d_movies = source[d][:movies]
     new_array << movies_with_director_key(d_name, d_movies)
-    row += 1 
+    d += 1 
   end
   new_array
 end
