@@ -63,6 +63,15 @@ def movies_with_director_key(name, movies_collection)
 # end
 # new_array
 # end
+ret_hash = []
+  col = 0 
+  while movies_collection[col] do 
+    ret_hash[col]= movie_with_director_name(name, movies_collection[col])  
+    col += 1
+  end
+  ret_hash
+end	
+end
 
 
 def gross_per_studio(collection)
