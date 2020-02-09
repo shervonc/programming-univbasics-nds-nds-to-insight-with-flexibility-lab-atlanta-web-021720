@@ -71,7 +71,7 @@ ret_hash = []
   end
   ret_hash
 end	
-end
+
 
 
 def gross_per_studio(collection)
