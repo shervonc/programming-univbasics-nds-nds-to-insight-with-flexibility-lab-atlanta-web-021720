@@ -57,7 +57,7 @@ d_info = movie_data[i][:director_name]
 new_array[i] = 0
 while i < movies_collection.length do
     
-    new_array << movies_with_director_key(name, movies_collection)
+    new_array << movie_with_director_name(director_name, movie_data)
 i += 1
 end
  new_array
