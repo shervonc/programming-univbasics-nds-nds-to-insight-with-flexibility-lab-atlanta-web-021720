@@ -53,12 +53,12 @@ def movies_with_director_key(name, movies_collection)
 new_array = []
 i = 0
 
-#d_info = movies_collection[:director_name][i]
 #new_array[i] = 0
 while i < movies_collection.length do
-    movie_data = movies_collection[i]
-    directname = name[:name]
-    new_array << movie_with_director_name(director_name, movie_data)
+    source = movie_with_director_name(director_name, movie_data)
+    movie_collection =source[movie_data[i]]
+    name = new_array[:name][name]
+    new_array << name => {movie_collection}
 i += 1
 end
  new_array
